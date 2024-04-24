@@ -1,0 +1,25 @@
+.header{
+    background: #222222;
+    display: flex;
+    gap: 1rem;
+    height: 4.5rem;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.header__announcement{
+    background: #eb5757;
+    padding: 0.4rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 100vw;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header__info{
+    color: #fff;
+    font-size: 1rem;
+}

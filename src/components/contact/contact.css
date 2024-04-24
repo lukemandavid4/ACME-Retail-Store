@@ -1,0 +1,146 @@
+.contact__section{
+    min-height: 34.375rem;
+    background: #222222;
+    padding: 3rem 22.5rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.contact__section--body{
+    display: flex;
+    justify-content: space-between;
+}
+.section__one, .section__two{
+    background: #fff;
+    min-height: 350px;
+    flex-basis: calc(50% - 20px);
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.section__one--logo .logo, .section__two--logo .logo{
+    color: #eb5757;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.section__one h1, .section__two h1{
+    color: black;
+    font-weight: 600;
+}
+.section__one p, .section__two p{
+    color: black;
+    text-align: center;
+}
+.section__one a, .section__two a{
+    color: #fff;
+    text-decoration: none;
+    background: #eb5757;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    transition: 0.5s background;
+}
+.section__one a:hover, .section__two a:hover{
+    background: black;
+}
+.contact__submit{
+    padding: 3rem 22.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__submit--one{
+    display: flex;
+    flex-direction: column;
+}
+.contact__head h1{
+    font-weight: 600;
+}
+.contact__address p{
+    letter-spacing: 0.57px;
+    font-size: 0.9rem;
+}
+.contact__inquiry{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact__submit--two{
+    width: 65%;
+}
+.contact__submit--two h1{
+    font-weight: 600;
+}
+.contact__submit--two p{
+    letter-spacing: 0.57px;
+    font-size: 0.9rem;
+}
+.name, .email, .message{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.name label, .email label, .message label{
+    letter-spacing: 0.57px;
+    font-size: 0.9rem;
+}
+.name input, .email input, .message textarea{
+    padding: 0.5rem 0.4rem;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 0.2rem;
+    resize: none;
+    width: 100%;
+}
+.name input:focus, .email input:focus, .message textarea:focus{
+    border: 1px solid #eb5757;
+}
+.contact__submit--two button{
+    background: #eb5757;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.4rem 1.8rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s background;
+}
+.contact__submit--two button:hover{
+    background: #000;
+}
+@media screen and (max-width: 1600px){
+    .contact__section,.contact__submit{
+        padding: 3rem 15rem;
+    }
+}
+@media screen and (max-width: 1280px){
+    .contact__section, .contact__submit{
+        padding: 3rem 5rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .contact__section, .contact__submit{
+        padding: 3rem 1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact__section--body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__one, .section__two{
+        flex-basis: calc(100% - 20px);
+    }
+    .contact__submit{
+        flex-direction: column;
+    }
+    .contact__submit--two{
+        width: 100%;
+    }
+}

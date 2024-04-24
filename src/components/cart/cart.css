@@ -1,0 +1,51 @@
+.background__filter{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    z-index: 998;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s opacity ease-in-out;
+}
+.background__filter.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.background__filter.close{
+    opacity: 0;
+}
+.cart{
+    position: fixed;
+    background: #fff;
+    width: 480px;
+    min-height: 100vh;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s opacity ease-in-out;
+}
+.cart__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 0.5px solid #000;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+}
+.cart__top .cart__top--close{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.cart.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.cart.close{
+    opacity: 0;
+}

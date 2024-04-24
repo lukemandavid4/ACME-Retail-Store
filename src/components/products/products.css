@@ -1,0 +1,127 @@
+.product__header{
+    background: #222222;
+    padding: 0 22.5rem;
+    height: 7.75rem;
+    display: flex;
+    align-items: center;
+}
+.product__header h1{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+.product__body{
+    padding: 3rem 22.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.white__tent{
+    background: url('../../assets/tents.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-basis: calc(50% - 10px);
+    height: 28.125rem;
+    border-radius: 0.5rem;
+}
+.blue__pack{
+    background: url('../../assets/blue.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-basis: calc(50% - 10px);
+    height: 28.125rem;
+    border-radius: 0.5rem;
+}
+.green__pack{
+    background: url('../../assets/green.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-basis: calc(50% - 10px);
+    height: 28.125rem;
+    border-radius: 0.5rem;
+}
+.coffee__tumbler{
+    background: url('../../assets/tin.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-basis: calc(50% - 10px);
+    height: 28.125rem;
+    border-radius: 0.5rem;
+}
+.gift__card{
+    background: url('../../assets/gift.jpg');
+    background-position: center;
+    background-size: cover;
+    flex-basis: calc(50% - 10px);
+    height: 28.125rem;
+    border-radius: 0.5rem;
+}
+.product__body--right{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-basis: calc(50% - 10px);
+}
+.product__body--right h1{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+.product__body--right h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.product__body--right p{
+    letter-spacing: 0.4px;
+}
+.product__body--right div{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.product__body--right div input{
+    width: 3.5rem;
+    padding: 0.2rem 0 0.2rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: 0.1px solid #000;
+}
+.product__body--right div .link{
+    text-decoration: none;
+    border: 0.1px solid #eb5757;
+    padding: 0.3rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem ;
+    font-weight: 600;
+    color: #eb5757;
+    transition: 0.3s background;
+}
+.product__body--right div .link:hover{
+    background: #eb5757;
+    color: #fff;
+}
+@media screen and (max-width: 1600px){
+    .product__header, .product__body{
+        padding: 3rem 15rem;
+    }
+}
+@media screen and (max-width: 1280px){
+    .product__header, .product__body{
+        padding: 3rem 5rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .product__header, .product__body{
+        padding: 3rem 1rem;
+    }
+}
+@media screen and (max-width: 675px){
+    .product__body{
+        flex-direction: column;
+    }
+    .product__body--right{
+        flex-basis: calc(100% - 10px);
+    }
+}

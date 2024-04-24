@@ -1,0 +1,41 @@
+.announcement__header{
+    background: #222222;
+    padding: 0 22.5rem;
+    height: 8rem;display: flex;
+    align-items: center;
+}
+.announcement__header h1{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.announcement__body{
+    padding: 4.5rem 22.5rem;
+}
+.announcement__body h1{
+    font-weight: 600;
+}
+.announcement__body p{
+    letter-spacing: 1px;
+    margin: 0 0 1rem 0;
+}
+.announcement__body h4{
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 1600px){
+    .announcement__header, .announcement__body{
+        padding: 3rem 15rem;
+    }
+}
+@media screen and (max-width: 1280px){
+    .announcement__header, .announcement__body{
+        padding: 3rem 5rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .announcement__header, .announcement__body{
+        padding: 3rem 1rem;
+    }
+}

@@ -1,0 +1,172 @@
+.shop{
+    display: flex;
+    flex-direction: column;
+}
+.shop__header{
+    background: #222222;
+    padding: 0 22.5rem;
+    height: 7.75rem;
+    display: flex;
+    align-items: center;
+}
+.shop__header h1{
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.shop__body{
+    padding: 3rem 22.5rem;
+}
+.shop__body--top{
+    background: url('../../assets/tents.jpg');
+    height: 15.625rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.shop__body--top div{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: #fff;
+}
+.shop__body--top div h5{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.shop__body--top div p{
+    font-size: 0.9rem;
+}
+.shop__body--top .link{
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    border-radius: 0.2rem;
+    padding: 0.3rem 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.shop__body--bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.shop__bottom--left{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 0.5rem;
+}
+.shop__bottom--left h4{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.shop__bottom--left .link{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 0.2rem;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    transition: 0.3s background;
+    font-size: 0.9rem;   
+}
+.shop__bottom--left .link:hover{
+    background: #000;
+    color: #fff;
+}
+.shop__bottom--right{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.shop__right--items{
+    flex-basis: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.one, .two, .three, .four{
+    width: 100%;
+    height: 25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.one{
+    background: url('../../assets/gift.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.two{
+    background: url('../../assets/tin.jpg');
+    background-position: center;
+    background-size: cover;
+}   
+.three{
+    background: url('../../assets/blue.jpg');
+    background-position: center;
+    background-size: cover;
+}   
+.four{
+    background: url('../../assets/green.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.shop__right--items h4{
+    font-weight: 500;
+} 
+.shop__right--items p{
+    font-weight: 600
+}  
+.shop__right--items .link{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.2rem 2rem;
+    background: #eb5757;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    transition: 0.3s background;
+}
+.shop__right--items .link:hover{
+    background: #000;
+}
+@media screen and (max-width: 1600px){
+    .shop__header, .shop__body{
+        padding: 3rem 15rem;
+    }
+}
+@media screen and (max-width: 1280px){
+    .shop__header, .shop__body{
+        padding: 3rem 5rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .shop__header, .shop__body{
+        padding: 3rem 1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .shop__body--bottom{
+        flex-direction: column;
+    }
+    .shop__bottom--left{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 580px){
+    .shop__bottom--right{
+        justify-content: column;
+    }
+    .shop__right--items{
+        flex-basis: 100%;
+    }
+}
